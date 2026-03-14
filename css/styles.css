@@ -572,6 +572,25 @@ nav {
   margin-bottom: 20px;
 }
 
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  color: var(--text-mid);
+}
+
 .about-visual {
   position: relative;
 }
