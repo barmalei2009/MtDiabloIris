@@ -833,25 +833,35 @@ nav {
   transform: scale(1.05);
 }
 
-/* Iris color swatches as gallery placeholders */
+/* Iris gallery images */
 .g1 {
-  background: linear-gradient(135deg, #6b3fa0 0%, #3b1f5e 50%, #9b6fd4 100%);
+  background-image: url('../images/IMG_3627.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .g2 {
-  background: linear-gradient(135deg, #c490e0 0%, #7b4fa8 100%);
+  background-image: url('../images/IMG_3685.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .g3 {
-  background: linear-gradient(135deg, #4a7a9b 0%, #2a5a7b 100%);
+  background-image: url('../images/IMG_3686.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .g4 {
-  background: linear-gradient(135deg, #d4a8ec 0%, #9b60c8 60%, #5a2f7e 100%);
+  background-image: url('../images/IMG_3721.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .g5 {
-  background: linear-gradient(135deg, #e8c870 0%, #c9a020 100%);
+  background-image: url('../images/IMG_3723.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .gallery-overlay {
