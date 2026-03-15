@@ -230,6 +230,15 @@ nav {
   opacity: 0;
   animation: fadeSlideUp 0.8s ease 0.5s forwards;
 }
+.hero-visual {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
 
 .hero-desc {
   font-size: 18px;
