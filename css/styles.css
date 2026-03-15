@@ -225,8 +225,6 @@ nav {
   max-width: 280px;   /* pick size you like: 220–320px */
   width: 100%;
   height: auto;
-  display: block;
-  margin: 0 auto;
 }
 
 .hero-subtitle {
