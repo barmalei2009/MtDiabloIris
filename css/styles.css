@@ -316,16 +316,12 @@ nav {
 /* Hero iris illustration (CSS art) */
 .hero-visual {
   position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 48%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  opacity: 0;
-  animation: fadeIn 1.2s ease 0.5s forwards;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 300px;
+}
+
 }
 
 .iris-illustration {
