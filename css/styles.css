@@ -178,7 +178,7 @@ nav {
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 120px 80px 80px;
+  padding: 100px 40px 60px;
   max-width: 680px;
   animation: fadeSlideUp 1s ease forwards;
 }
