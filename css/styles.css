@@ -261,6 +261,44 @@ nav {
   opacity: 0;
   animation: fadeSlideUp 0.8s ease 0.8s forwards;
 }
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-visual {
+  flex: 0 0 auto;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.hero-visual img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-visual {
+    margin-top: 20px;
+  }
+}
+
+
 
 .btn-primary {
   display: inline-flex;
