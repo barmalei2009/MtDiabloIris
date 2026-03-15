@@ -135,13 +135,12 @@ nav {
 }
 
 /* ── HERO ── */
-/* ── HERO ── */
 .hero {
   min-height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center; /* keeps layout centered on all screens */
+  justify-content: center;
   overflow: hidden;
 }
 
@@ -307,9 +306,10 @@ nav {
 
 @media (max-width: 768px) {
   .hero-visual {
-    display: none; /* intentional mobile simplification */
+    display: none;
   }
 }
+
 
 .btn-primary {
   display: inline-flex;
