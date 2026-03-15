@@ -1259,14 +1259,6 @@ footer {
     gap: 24px;
   }
 
-  .hero-content {
-    padding: 120px 48px 80px;
-    max-width: 580px;
-  }
-
-  .hero-visual {
-    width: 42%;
-  }
 
   .about-section,
   .gallery-section,
