@@ -298,6 +298,14 @@ nav {
   }
 }
 
+.hero {
+  justify-content: center;
+}
+
+.hero-inner {
+  max-width: 1200px;
+  width: 100%;
+}
 
 
 .btn-primary {
