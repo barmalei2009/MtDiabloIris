@@ -221,11 +221,6 @@ nav {
   color: var(--iris-mid);
 }
 
-.hero-visual img {
-  max-width: 280px;   /* pick size you like: 220–320px */
-  width: 100%;
-  height: auto;
-}
 
 .hero-subtitle {
   font-size: 22px;
@@ -241,10 +236,12 @@ nav {
   margin: 0 auto;
 }
 
-.hero-image {
+.hero-visual img {
   width: 100%;
   height: auto;
+  display: block;
 }
+
 
 .hero-desc {
   font-size: 18px;
