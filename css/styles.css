@@ -274,14 +274,16 @@ nav {
 .hero-visual {
   flex-shrink: 0;
   max-width: 280px;
+  overflow: hidden;
 }
 
 .hero-visual img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 50%;
+  border-radius: 0;
   box-shadow: 0 4px 15px rgba(107, 63, 160, 0.3);
+  object-fit: cover; 
 }
 
 /* ── RESPONSIVE ── */
