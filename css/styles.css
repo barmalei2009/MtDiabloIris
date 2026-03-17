@@ -272,10 +272,14 @@ nav {
 
 /* Right column (image) */
 .hero-visual {
-  flex-shrink: 0;
-  max-width: 280px;
+  flex: 1;              /* makes right side equal to left side */
+  max-width: none;      /* removes the 280px limit */
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .hero-visual img {
   width: 100%;
