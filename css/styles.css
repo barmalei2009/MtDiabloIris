@@ -283,7 +283,7 @@ nav {
   display: block;
   border-radius: 0;
   box-shadow: 0 4px 15px rgba(107, 63, 160, 0.3);
-  object-fit: cover; 
+  object-fit: contain; 
 }
 
 /* ── RESPONSIVE ── */
