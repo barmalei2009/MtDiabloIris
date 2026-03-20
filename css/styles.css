@@ -1063,90 +1063,102 @@ ul li {
   padding: 0 60px;
   display: flex;
   flex-direction: column;
+  gap: 0;
+}
+
+.event-row {
+  display: grid;
+  grid-template-columns: 120px 1fr 280px;
   gap: 40px;
+  align-items: start;
+  padding: 32px 0;
+  border-top: 1px solid rgba(107, 63, 160, 0.2);
+  transition: background-color 0.3s ease;
 }
 
-.event-card {
-  border-left: 4px solid var(--iris-mid);
-  padding-left: 24px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  transition: border-left-color 0.3s ease;
+.event-row:last-child {
+  border-bottom: 1px solid rgba(107, 63, 160, 0.2);
 }
 
-.event-card:hover {
-  border-left-color: var(--gold);
+.event-row:hover {
+  background-color: rgba(107, 63, 160, 0.02);
+  padding: 32px 20px;
+  margin: 0 -20px;
 }
 
-.event-date {
+.event-date-col {
   font-family: 'Playfair Display', serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: var(--iris-deep);
-  margin-bottom: 8px;
   text-transform: capitalize;
+}
+
+.event-details-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .event-title {
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--iris-deep);
-  margin-bottom: 6px;
 }
 
 .event-topic {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 16px;
-  font-style: italic;
+  font-size: 15px;
   color: var(--iris-mid);
-  margin-bottom: 8px;
+  font-style: italic;
 }
 
 .event-speaker {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 16px;
+  font-size: 15px;
   color: var(--charcoal);
-  margin-bottom: 6px;
   font-weight: 500;
 }
 
 .event-location {
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
   font-weight: 600;
   color: var(--iris-mid);
-  margin-bottom: 4px;
 }
 
 .event-address {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 15px;
-  color: var(--text-mid);
-  line-height: 1.6;
-  margin-bottom: 8px;
-}
-
-.event-time {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 16px;
-  color: var(--charcoal);
-  margin-bottom: 6px;
-  font-weight: 500;
-}
-
-.event-note {
   font-size: 14px;
-  color: var(--iris-mid);
-  font-weight: normal;
+  color: var(--text-mid);
 }
 
 .event-admission {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 15px;
-  color: var(--iris-mid);
-  font-weight: 500;
-  margin-top: 8px;
+  font-size: 14px;
+  color: var(--text-mid);
+  font-style: italic;
+}
+
+.event-time-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: right;
+}
+
+.event-time {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--iris-deep);
+}
+
+.event-note {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px;
+  color: var(--text-mid);
 }
 
 /* Decorative iris SVG shapes */
@@ -1496,6 +1508,20 @@ footer {
     padding: 80px 48px;
   }
 
+  .events-intro {
+    padding: 0 48px;
+  }
+
+  .events-list {
+    padding: 0 48px;
+  }
+
+  .event-row {
+    grid-template-columns: 100px 1fr 240px;
+    gap: 30px;
+    padding: 28px 0;
+  }
+
   .events-section {
     padding: 80px 48px;
   }
@@ -1542,15 +1568,6 @@ footer {
     padding: 60px 32px;
   }
 
-  .events-grid {
-    grid-template-columns: 1fr;
-    padding: 0;
-  }
-
-  .events-section {
-    padding: 60px 32px;
-  }
-
   .events-intro {
     padding: 0 32px;
   }
@@ -1565,25 +1582,38 @@ footer {
 
   .events-list {
     padding: 0 32px;
-    gap: 32px;
   }
 
-  .event-date {
-    font-size: 15px;
+  .event-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 24px 0;
+  }
+
+  .event-row:hover {
+    padding: 24px 0;
+    margin: 0;
+  }
+
+  .event-date-col {
+    font-size: 14px;
+    margin-bottom: 8px;
   }
 
   .event-title {
-    font-size: 18px;
+    font-size: 16px;
   }
 
-  .event-card {
-    padding-left: 16px;
+  .event-time-col {
+    text-align: left;
   }
 
-  .events-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
+  .event-time {
+    font-size: 15px;
+  }
+
+  .events-section {
+    padding: 60px 32px;
   }
 
   .gallery-grid {
