@@ -1037,7 +1037,7 @@ ul li {
 /* ── EVENTS ── */
 .events-intro {
   max-width: 1200px;
-  margin: 0 auto 60px;
+  margin: 0 auto 80px;
   padding: 0 60px;
 }
 
@@ -1071,24 +1071,26 @@ ul li {
   grid-template-columns: 120px 1fr 280px;
   gap: 40px;
   align-items: start;
-  padding: 32px 0;
-  border-top: 1px solid rgba(107, 63, 160, 0.2);
-  transition: background-color 0.3s ease;
+  padding: 48px 0;
+  border-top: 2px solid var(--charcoal);
+  border-bottom: 0;
+}
+
+.event-row:first-child {
+  border-top: 2px solid var(--charcoal);
 }
 
 .event-row:last-child {
-  border-bottom: 1px solid rgba(107, 63, 160, 0.2);
+  border-bottom: 2px solid var(--charcoal);
 }
 
 .event-row:hover {
-  background-color: rgba(107, 63, 160, 0.02);
-  padding: 32px 20px;
-  margin: 0 -20px;
+  background-color: transparent;
 }
 
 .event-date-col {
   font-family: 'Playfair Display', serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--iris-deep);
   text-transform: capitalize;
@@ -1097,46 +1099,45 @@ ul li {
 .event-details-col {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
 
 .event-title {
   font-family: 'Playfair Display', serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   color: var(--iris-deep);
 }
 
 .event-topic {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 15px;
-  color: var(--iris-mid);
+  font-size: 16px;
+  color: var(--text-mid);
   font-style: italic;
 }
 
 .event-speaker {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 15px;
+  font-size: 16px;
   color: var(--charcoal);
-  font-weight: 500;
 }
 
 .event-location {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--iris-mid);
 }
 
 .event-address {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 14px;
+  font-size: 15px;
   color: var(--text-mid);
 }
 
 .event-admission {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 14px;
+  font-size: 15px;
   color: var(--text-mid);
   font-style: italic;
 }
@@ -1144,8 +1145,21 @@ ul li {
 .event-time-col {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
   text-align: right;
+}
+
+.event-time {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--iris-deep);
+}
+
+.event-note {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  color: var(--text-mid);
 }
 
 .event-time {
@@ -1519,7 +1533,7 @@ footer {
   .event-row {
     grid-template-columns: 100px 1fr 240px;
     gap: 30px;
-    padding: 28px 0;
+    padding: 40px 0;
   }
 
   .events-section {
@@ -1587,11 +1601,11 @@ footer {
   .event-row {
     grid-template-columns: 1fr;
     gap: 12px;
-    padding: 24px 0;
+    padding: 32px 0;
   }
 
   .event-row:hover {
-    padding: 24px 0;
+    padding: 32px 0;
     margin: 0;
   }
 
