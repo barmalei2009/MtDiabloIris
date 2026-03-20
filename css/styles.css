@@ -1729,6 +1729,18 @@ footer {
   margin: 0 auto;
 }
 
+/* Unified interior page header */
+.interior-header {
+  padding: 110px 80px 60px;
+  background: var(--cream);
+}
+
+.interior-header-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+
 @media (max-width: 1024px) {
   .page-section {
     padding: 80px 48px;
