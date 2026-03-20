@@ -1766,6 +1766,12 @@ footer {
   padding: 0 60px;
 }
 
+  .page-section {
+  padding: 110px 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
   
   .gallery-page-grid .gallery-item {
     height: 200px;
