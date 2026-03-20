@@ -1722,6 +1722,26 @@ footer {
   opacity: 1;
 }
 
+/* Interior page layout (matches Events page) */
+.page-section {
+  padding: 110px 80px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .page-section {
+    padding: 80px 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-section {
+    padding: 60px 32px;
+  }
+}
+
+
 .gallery-page-grid .gallery-label {
   font-family: 'Playfair Display', serif;
   font-size: 15px;
