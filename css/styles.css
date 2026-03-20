@@ -1034,6 +1034,121 @@ ul li {
   margin: 0;
 }
 
+/* ── EVENTS ── */
+.events-intro {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  padding: 0 60px;
+}
+
+.events-intro h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 600;
+  color: var(--iris-deep);
+  margin-bottom: 20px;
+}
+
+.events-intro p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  color: var(--text-mid);
+  line-height: 1.8;
+  max-width: 700px;
+}
+
+.events-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.event-card {
+  border-left: 4px solid var(--iris-mid);
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition: border-left-color 0.3s ease;
+}
+
+.event-card:hover {
+  border-left-color: var(--gold);
+}
+
+.event-date {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--iris-deep);
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.event-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--iris-deep);
+  margin-bottom: 6px;
+}
+
+.event-topic {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  font-style: italic;
+  color: var(--iris-mid);
+  margin-bottom: 8px;
+}
+
+.event-speaker {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  color: var(--charcoal);
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.event-location {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--iris-mid);
+  margin-bottom: 4px;
+}
+
+.event-address {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  color: var(--text-mid);
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.event-time {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  color: var(--charcoal);
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.event-note {
+  font-size: 14px;
+  color: var(--iris-mid);
+  font-weight: normal;
+}
+
+.event-admission {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  color: var(--iris-mid);
+  font-weight: 500;
+  margin-top: 8px;
+}
+
 /* Decorative iris SVG shapes */
 .iris-shape {
   position: absolute;
@@ -1375,6 +1490,8 @@ footer {
   .about-section,
   .gallery-section,
   .iris-types-grid,
+  .events-intro,
+  .events-list,
   .mailing-section {
     padding: 80px 48px;
   }
@@ -1432,6 +1549,35 @@ footer {
 
   .events-section {
     padding: 60px 32px;
+  }
+
+  .events-intro {
+    padding: 0 32px;
+  }
+
+  .events-intro h2 {
+    font-size: 32px;
+  }
+
+  .events-intro p {
+    font-size: 16px;
+  }
+
+  .events-list {
+    padding: 0 32px;
+    gap: 32px;
+  }
+
+  .event-date {
+    font-size: 15px;
+  }
+
+  .event-title {
+    font-size: 18px;
+  }
+
+  .event-card {
+    padding-left: 16px;
   }
 
   .events-header {
