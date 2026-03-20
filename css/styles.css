@@ -965,6 +965,75 @@ ul li {
   color: var(--white);
 }
 
+/* ── IRIS TYPE CARDS ── */
+.iris-types-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin: 40px 0 60px;
+}
+
+.iris-type-card {
+  background: var(--white);
+  border-radius: 6px;
+  padding: 32px 24px;
+  border-left: 4px solid var(--iris-mid);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(107, 63, 160, 0.08);
+}
+
+.iris-type-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(107, 63, 160, 0.15);
+  border-left-color: var(--gold);
+}
+
+.iris-type-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--iris-deep);
+  margin: 0 0 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--iris-pale);
+}
+
+.iris-type-card p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  color: var(--text-mid);
+  line-height: 1.75;
+  margin: 16px 0;
+}
+
+.hardiness-info {
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--iris-mid);
+  padding: 12px 16px;
+  background: var(--iris-blush);
+  border-radius: 4px;
+  margin-top: 16px !important;
+}
+
+.iris-growing-note {
+  background: linear-gradient(135deg, rgba(107, 63, 160, 0.05) 0%, rgba(155, 111, 212, 0.05) 100%);
+  border-left: 4px solid var(--gold);
+  border-radius: 4px;
+  padding: 24px;
+  margin: 40px 0;
+}
+
+.iris-growing-note p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  color: var(--charcoal);
+  line-height: 1.75;
+  margin: 0;
+}
+
 /* Decorative iris SVG shapes */
 .iris-shape {
   position: absolute;
@@ -1305,6 +1374,7 @@ footer {
 
   .about-section,
   .gallery-section,
+  .iris-types-grid,
   .mailing-section {
     padding: 80px 48px;
   }
@@ -1377,6 +1447,16 @@ footer {
 
   .gallery-section {
     padding: 60px 32px;
+  }
+
+  .iris-types-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 32px 0 48px;
+  }
+
+  .iris-growing-note {
+    padding: 20px;
   }
 
   .mailing-section {
