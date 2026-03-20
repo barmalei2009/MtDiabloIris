@@ -1771,6 +1771,16 @@ footer {
   max-width: 1400px;
   margin: 0 auto;
 }
+/* Unified interior page header */
+.interior-header {
+  padding: 110px 80px 60px;
+  background: var(--cream);
+}
+
+.interior-header-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+}
 
   
   .gallery-page-grid .gallery-item {
