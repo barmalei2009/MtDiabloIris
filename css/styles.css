@@ -1782,6 +1782,51 @@ footer {
   margin: 0 auto;
 }
 
+/* Poster card for Resources page */
+.resources-poster-card {
+  background: var(--white);
+  border-radius: 4px;
+  border: 1px solid rgba(155, 111, 212, 0.12);
+  box-shadow: 0 4px 20px rgba(59, 31, 94, 0.10);
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Top accent bar (matches .about-card::before) */
+.resources-poster-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--iris-mid), var(--iris-light));
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.resources-poster-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(107, 63, 160, 0.15);
+}
+
+.resources-poster-card img {
+  width: 100%;
+  display: block;
+}
+
+/* Caption styling that matches your serif body text */
+.resources-poster-caption {
+  padding: 20px 24px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text-mid);
+  background: var(--cream);
+  border-top: 1px solid rgba(155, 111, 212, 0.10);
+}
+
   
   .gallery-page-grid .gallery-item {
     height: 200px;
