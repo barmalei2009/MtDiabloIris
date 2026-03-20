@@ -1760,7 +1760,12 @@ footer {
     padding: 120px 32px 80px;
   }
 }
+.content-wrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+}
 
+  
   .gallery-page-grid .gallery-item {
     height: 200px;
   }
