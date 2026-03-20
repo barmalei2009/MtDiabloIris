@@ -280,6 +280,9 @@ nav {
   align-items: center;
   height: 100%;
 }
+.hero {
+  padding-top: 120px; /* gives breathing room below the fixed nav */
+}
 
 
 .hero-visual img {
