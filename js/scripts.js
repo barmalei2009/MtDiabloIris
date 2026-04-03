@@ -1,3 +1,29 @@
+// Events dynamic rendering
+document.addEventListener('DOMContentLoaded', function() {
+  const eventsRoot = document.getElementById('events-root');
+  if (!eventsRoot) return;
+  fetch('../files/events.json')
+    .then(response => response.json())
+    .then(events => {
+      eventsRoot.innerHTML = events.map(event => `
+        <article class="event-row">
+          <div class="event-date-col">${event.date}</div>
+          <div class="event-details-col">
+            <div class="event-title">${event.name}</div>
+            ${event.place ? `<div class="event-location">${event.place}</div>` : ''}
+          </div>
+          <div class="event-time-col">
+            ${event.time ? `<div class="event-time">${event.time}</div>` : ''}
+            ${event.note ? `<div class="event-note">${event.note}</div>` : ''}
+          </div>
+        </article>
+      `).join('');
+    })
+    .catch(err => {
+      eventsRoot.innerHTML = '<p>Could not load events.</p>';
+      console.error('Events load error:', err);
+    });
+});
 // Gallery dynamic rendering
 document.addEventListener('DOMContentLoaded', function() {
   const galleryRoot = document.getElementById('gallery-root');

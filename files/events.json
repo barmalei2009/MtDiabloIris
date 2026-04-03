@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Monthly Meeting",
+    "date": "September 13",
+    "place": "Pleasent Hill 320 Civic Drive Pleasent Hill, CA 94523",
+    "time": "1:00 to 3:00 PM",
+    "note": ""
+  },
+  {
+    "name": "Iris Show and Potted Iris Sale",
+    "date": "Saturday/Sunday Apr 25/26",
+    "place": "Aldan Lane Nursery, 981 Alden Lane - Livermore, CA 94550",
+    "time": "9:00 AM – 5 PM",
+    "note": "Free and open to the public"
+  },
+  {
+    "name": "Monthly Meeting",
+    "date": "Sun October 11",
+    "place": "Pleasent Hill Recreation & Park District, 320 Civic Drive Pleasent Hill, CA 94523",
+    "time": "1 pm to 3:00 PM",
+    "note": ""
+  },
+  {
+    "name": "Spring Regional",
+    "date": "May 15-17",
+    "place": "Reno, Nevada",
+    "time": "",
+    "note": "Hosted by High Desert Iris Society"
+  },
+  {
+    "name": "MDIS Auction",
+    "date": "Sun July 12",
+    "place": "",
+    "time": "Noon to 4:00 PM",
+    "note": "Auction Starts at 1:00 PM"
+  }
+]
