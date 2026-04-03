@@ -1,3 +1,42 @@
+// Gallery dynamic rendering
+document.addEventListener('DOMContentLoaded', function() {
+  const galleryRoot = document.getElementById('gallery-root');
+  if (!galleryRoot) return;
+  fetch('../files/images.json')
+    .then(response => response.json())
+    .then(images => {
+      // Group images by category
+      const categories = {};
+      images.forEach(img => {
+        if (!categories[img.category]) categories[img.category] = [];
+        categories[img.category].push(img);
+      });
+      // Render each category
+      galleryRoot.innerHTML = Object.keys(categories).map(category => {
+        const items = categories[category].map(img => `
+          <article class="gallery-item">
+            <img src="../images/${img.filename}" alt="${img.alt}">
+            <div class="gallery-metadata">
+              <span class="iris-class">${img.class}</span>
+              <h4>${img.title}</h4>
+            </div>
+          </article>
+        `).join('');
+        return `
+          <section class="gallery-section">
+            <h3 class="gallery-category">${category}</h3>
+            <div class="gallery-grid">
+              ${items}
+            </div>
+          </section>
+        `;
+      }).join('');
+    })
+    .catch(err => {
+      galleryRoot.innerHTML = '<p>Could not load gallery images.</p>';
+      console.error('Gallery load error:', err);
+    });
+});
 // Scroll Reveal Animation
 const revealElements = document.querySelectorAll('.reveal');
 
