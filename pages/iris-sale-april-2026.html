@@ -34,7 +34,7 @@
       </div>
     </section>
     <section class="about-section reveal">
-      <div class="about-card-grid" id="iris-inventory-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;"></div>
+      <div id="iris-inventory-grid" class="about-card-grid" style="gap: 24px;"></div>
       <p style="margin-top:2em; font-size:0.95em; color:#666;">Sale location: Alden Lane Nursery, 981 Alden Lane, Livermore, CA 94550<br>Sale hours: 9:00 AM – 5:00 PM, April 25 & 26, 2026</p>
     </section>
     <script>
@@ -45,12 +45,13 @@
         .then(response => response.json())
         .then(irises => {
           grid.innerHTML = irises.map(iris => `
-            <div class="about-card">
-              ${iris.photo ? `<img src="${iris.photo}" alt="${iris.name}" style="width:100%;max-width:180px;display:block;margin:0 auto 12px;border-radius:8px;object-fit:cover;">` : ''}
-              <h3>${iris.name}</h3>
-              <p class="iris-type"><strong>Type:</strong> ${iris.type || ''}</p>
-              <p class="iris-hort"><strong>Horticultural:</strong> ${iris.horticultural || ''}</p>
-              <a href="${iris.aisWiki || '#'}" target="_blank" class="btn-primary" style="display:inline-block;margin-top:10px;">Read More</a>
+            <div class="about-card sale-card">
+              ${iris.photo ? `<img src="${iris.photo}" alt="${iris.name}" class="sale-card-img">` : ''}
+              <div class="sale-card-content">
+                <h3 class="sale-card-title">${iris.name}</h3>
+                ${iris.price ? `<div class="sale-card-price">$${parseFloat(iris.price).toFixed(2)}</div>` : ''}
+                <a href="${iris.aisWiki || '#'}" target="_blank" class="btn-gold sale-card-btn">Read More</a>
+              </div>
             </div>
           `).join('');
         })
