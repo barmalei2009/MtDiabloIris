@@ -46,10 +46,10 @@
         .then(irises => {
           grid.innerHTML = irises.map(iris => `
             <div class="about-card">
-              ${iris.image ? `<img src="../images/${iris.image}" alt="${iris.name}" style="width:100%;max-width:180px;display:block;margin:0 auto 12px;border-radius:8px;object-fit:cover;">` : ''}
+              ${iris.image ? `<img src="../images/${iris.image}" alt="QR for ${iris.name}" style="width:100%;max-width:120px;display:block;margin:0 auto 12px;border-radius:8px;object-fit:contain;background:#fff;">` : ''}
               <h3>${iris.name}</h3>
               <p class="iris-type"><strong>Type:</strong> ${iris.type || ''}</p>
-              <p class="iris-price"><strong>Price:</strong> $${iris.price ? iris.price.toFixed(2) : ''}</p>
+              <p class="iris-hort"><strong>Horticultural:</strong> ${iris.horticultural || ''}</p>
               <a href="${iris.aisWiki || '#'}" target="_blank" class="btn-primary" style="display:inline-block;margin-top:10px;">Read More</a>
             </div>
           `).join('');
