@@ -3,30 +3,30 @@
     "name": "After The Storm",
     "type": "Tall Bearded",
     "price": 8.00,
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbAfterTheStorm"
+    "aisWiki": "https://wiki.irises.org/WikiTb/AfterTheStorm"
   },
   {
     "name": "Autumn Circus",
     "type": "Tall Bearded",
     "price": 8.00,
-    "aisWiki": "https://wiki.irises.org/TbAthruA/TbAutumnCircus"
+    "aisWiki": "https://wiki.irises.org/WikiTb/AutumnCircus"
   },
   {
     "name": "Baltic Sea",
     "type": "Tall Bearded",
     "price": 8.00,
-    "aisWiki": "https://wiki.irises.org/TbB/TbBalticSea"
+    "aisWiki": "https://wiki.irises.org/WikiTb/BalticSea"
   },
   {
     "name": "Before The Storm",
     "type": "Tall Bearded",
     "price": 8.00,
-    "aisWiki": "https://wiki.irises.org/TbB/TbBeforeTheStorm"
+    "aisWiki": "https://wiki.irises.org/WikiTb/BeforeTheStorm"
   },
   {
     "name": "Blazing Beacon",
     "type": "Tall Bearded",
     "price": 8.00,
-    "aisWiki": "https://wiki.irises.org/TbB/TbBlazingBeacon"
+    "aisWiki": "https://wiki.irises.org/WikiTb/BlazingBeacon"
   }
 ]
