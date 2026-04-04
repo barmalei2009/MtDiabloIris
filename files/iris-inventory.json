@@ -3,30 +3,35 @@
     "name": "After The Storm",
     "price": 8.00,
     "description": "Classic bearded iris, lavender-blue with white center.",
-    "image": "after-the-storm.jpg"
+    "image": "after-the-storm.jpg",
+    "aisWiki": "https://wiki.irises.org/TbAthruE/TbAfterTheStorm"
   },
   {
     "name": "Autumn Circus",
     "price": 8.00,
     "description": "White standards, purple falls, ruffled.",
-    "image": "autumn-circus.jpg"
+    "image": "autumn-circus.jpg",
+    "aisWiki": "https://wiki.irises.org/TbAthruA/TbAutumnCircus"
   },
   {
     "name": "Baltic Sea",
     "price": 8.00,
     "description": "Deep blue, vigorous grower.",
-    "image": "baltic-sea.jpg"
+    "image": "baltic-sea.jpg",
+    "aisWiki": "https://wiki.irises.org/TbB/TbBalticSea"
   },
   {
     "name": "Before The Storm",
     "price": 8.00,
     "description": "Near-black, velvety petals.",
-    "image": "before-the-storm.jpg"
+    "image": "before-the-storm.jpg",
+    "aisWiki": "https://wiki.irises.org/TbB/TbBeforeTheStorm"
   },
   {
     "name": "Blazing Beacon",
     "price": 8.00,
     "description": "Bright yellow standards, red falls.",
-    "image": "blazing-beacon.jpg"
+    "image": "blazing-beacon.jpg",
+    "aisWiki": "https://wiki.irises.org/TbB/TbBlazingBeacon"
   }
 ]
