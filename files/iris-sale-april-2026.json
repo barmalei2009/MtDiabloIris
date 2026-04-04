@@ -1,35 +1,4 @@
 [
-  {
-    "name": "After The Storm",
-    "type": "Tall Bearded",
-    "price": 8.00,
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbAfterTheStorm"
-  },
-  {
-    "name": "Autumn Circus",
-    "type": "Tall Bearded",
-    "price": 8.00,
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbAutumnCircus"
-  },
-  {
-    "name": "Baltic Sea",
-    "type": "Tall Bearded",
-    "price": 8.00,
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbBalticSea"
-  },
-  {
-    "name": "Before The Storm",
-    "type": "Tall Bearded",
-    "price": 8.00,
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbBeforeTheStorm"
-  },
-  {
-    "name": "Blazing Beacon",
-    "type": "Tall Bearded",
-    "price": 8.00,
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbBlazingBeacon"
-  }
-  [
   {"name": "Absolute Crush", "type": "TB, 36\"", "horticultural": "TB", "aisWiki": "https://wiki.irises.org/TbAthruE/TbAbsoluteCrush", "image": "AbsoluteCrush-qr.png"},
   {"name": "All About Spring", "type": "TB, 36\"", "horticultural": "TB", "aisWiki": "https://wiki.irises.org/TbAthruE/TbAllAboutSpring", "image": "AllAboutSpring-qr.png"},
   {"name": "Alsea Falls", "type": "TB, 36\"", "horticultural": "TB", "aisWiki": "https://wiki.irises.org/TbAthruE/TbAlseaFalls", "image": "AlseaFalls-qr.png"},
@@ -39,6 +8,18 @@
   {"name": "Aubrianna", "type": "TB, 34\"", "horticultural": "TB", "aisWiki": "https://wiki.irises.org/TbAthruE/TbAubrianna", "image": "Aubrianna-qr.png"},
   {"name": "Australian Rose", "type": "TB, 34\"", "horticultural": "TB", "aisWiki": "https://wiki.irises.org/TbAthruE/TbAustralianRose", "image": "AustralianRose-qr.png"},
   {"name": "Autumn Jester", "type": "SDB, 13\"", "horticultural": "SDB", "aisWiki": "https://wiki.irises.org/Sdb/SdbAutumnJester", "image": "AutumnJester-qr.png"},
-  {"name": "Awakening Embers", "type": "TB, 36\"", "horticultural": "TB", "aisWiki": "https://wiki.irises.org/TbAthruE/TbAwakeningEmbers", "image": "AwakeningEmbers-qr.png"}
-]
+  {"name": "Awakening Embers", "type": "TB, 36\"", "horticultural": "TB", "aisWiki": "https://wiki.irises.org/TbAthruE/TbAwakeningEmbers", "image": "AwakeningEmbers-qr.png"},
+{"name": "Backlit Beauty", "type": "IB, 25\"", "horticultural": "IB", "aisWiki": "https://wiki.irises.org/Ib/IbBacklitBeauty", "image": "BacklitBeauty-qr.png"},
+{"name": "Banana Wind", "type": "TB, 36\"", "horticultural": "TB", "aisWiki": "https://wiki.irises.org/TbAthruE/TbBananaWind", "image": "BananaWind-qr.png"},
+{"name": "Be Brief", "type": "MDB, 7\"", "horticultural": "MDB", "aisWiki": "https://wiki.irises.org/Main/Mdb/MdbBeBrief", "image": "BeBrief-qr.png"},
+{"name": "Bee My Honey", "type": "TB, 39\"", "horticultural": "TB", "aisWiki": "https://wiki.irises.org/TbAthruE/TbBeeMyHoney", "image": "BeeMyHoney-qr.png"},
+{"name": "Better Than Butter", "type": "TB, 41\"", "horticultural": "TB", "aisWiki": "https://wiki.irises.org/TbAthruE/TbBetterThanButter", "image": "BetterThanButter-qr.png"},
+{"name": "Better Together", "type": "TB, 40\"", "horticultural": "TB", "aisWiki": "https://wiki.irises.org/TbAthruE/TbBetterTogether", "image": "BetterTogether-qr.png"},
+{"name": "Bitty Beauty", "type": "MDB, 7.5\"", "horticultural": "MDB", "aisWiki": "https://wiki.irises.org/Main/Mdb/MdbBittyBeauty", "image": "BittyBeauty-qr.png"},
+{"name": "Black Is Black", "type": "TB, 37\"", "horticultural": "TB", "aisWiki": "https://wiki.irises.org/TbAthruE/TbBlackIsBlack", "image": "BlackIsBlack-qr.png"},
+{"name": "Black Lipstick", "type": "TB, 35\"", "horticultural": "TB", "aisWiki": "https://wiki.irises.org/TbAthruE/TbBlackLipstick", "image": "BlackLipstick-qr.png"},
+{"name": "Blind Ambition", "type": "TB, 38\"", "horticultural": "TB", "aisWiki": "https://wiki.irises.org/TbAthruE/TbBlindAmbition", "image": "BlindAmbition-qr.png"}
+
+
+
 ]
