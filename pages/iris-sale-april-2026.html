@@ -46,7 +46,7 @@
         .then(irises => {
           grid.innerHTML = irises.map(iris => `
             <div class="about-card">
-              ${iris.image ? `<img src="../images/${iris.image}" alt="QR for ${iris.name}" style="width:100%;max-width:120px;display:block;margin:0 auto 12px;border-radius:8px;object-fit:contain;background:#fff;">` : ''}
+              ${iris.photo ? `<img src="${iris.photo}" alt="${iris.name}" style="width:100%;max-width:180px;display:block;margin:0 auto 12px;border-radius:8px;object-fit:cover;">` : ''}
               <h3>${iris.name}</h3>
               <p class="iris-type"><strong>Type:</strong> ${iris.type || ''}</p>
               <p class="iris-hort"><strong>Horticultural:</strong> ${iris.horticultural || ''}</p>
