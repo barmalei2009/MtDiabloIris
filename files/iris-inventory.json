@@ -1,0 +1,32 @@
+[
+  {
+    "name": "After The Storm",
+    "price": 8.00,
+    "description": "Classic bearded iris, lavender-blue with white center.",
+    "image": "after-the-storm.jpg"
+  },
+  {
+    "name": "Autumn Circus",
+    "price": 8.00,
+    "description": "White standards, purple falls, ruffled.",
+    "image": "autumn-circus.jpg"
+  },
+  {
+    "name": "Baltic Sea",
+    "price": 8.00,
+    "description": "Deep blue, vigorous grower.",
+    "image": "baltic-sea.jpg"
+  },
+  {
+    "name": "Before The Storm",
+    "price": 8.00,
+    "description": "Near-black, velvety petals.",
+    "image": "before-the-storm.jpg"
+  },
+  {
+    "name": "Blazing Beacon",
+    "price": 8.00,
+    "description": "Bright yellow standards, red falls.",
+    "image": "blazing-beacon.jpg"
+  }
+]
