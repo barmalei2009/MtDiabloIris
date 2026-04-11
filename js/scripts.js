@@ -7,15 +7,26 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(events => {
       // Helper to parse event date strings to Date objects for sorting
       function parseEventDate(event) {
-        // Try to extract a year, month, and day from the date string
-        // Handles formats like "April 25/26, 2026", "May 15-17", "Sun October 11", etc.
-        let d = event.date;
-        let year = (d.match(/\d{4}/) || [])[0] || new Date().getFullYear();
-        let monthNames = ["january","february","march","april","may","june","july","august","september","october","november","december"];
-        let monthIndex = monthNames.findIndex(m => d.toLowerCase().includes(m));
-        if (monthIndex === -1) return new Date(year, 11, 31); // Put unknowns at end
-        let dayMatch = d.match(/\b(\d{1,2})(?:[-\/]\d{1,2})?/);
+        // Normalize and extract month, day, year
+        let d = event.date.trim();
+        let months = ["january","february","march","april","may","june","july","august","september","october","november","december"];
+        let lower = d.toLowerCase();
+        let year = (d.match(/\d{4}/) || [])[0];
+        let monthIndex = months.findIndex(m => lower.includes(m));
+        // If no year, use current or next year if event is earlier in the year
+        let now = new Date();
+        let defaultYear = now.getFullYear();
+        if (!year) {
+          if (monthIndex !== -1 && monthIndex < now.getMonth()) defaultYear++;
+          year = defaultYear;
+        } else {
+          year = parseInt(year, 10);
+        }
+        // Find first day in string (handles 25/26, 15-17, etc)
+        let dayMatch = d.match(/\b(\d{1,2})\b/);
         let day = dayMatch ? parseInt(dayMatch[1], 10) : 1;
+        // If no month found, put at end
+        if (monthIndex === -1) return new Date(year, 11, 31);
         return new Date(year, monthIndex, day);
       }
       events.sort((a, b) => parseEventDate(a) - parseEventDate(b));
