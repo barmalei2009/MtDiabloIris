@@ -136,9 +136,23 @@
     </div>
 
     <div style="display:flex;gap:16px;margin-top:28px;">
-      <img src="../images/IMG_5961.jpeg" alt="Mt. Diablo Iris Society" style="width:50%;border-radius:8px;box-shadow:0 4px 18px rgba(107,63,160,0.12);object-fit:cover;">
-      <img src="../images/IMG_5962.jpeg" alt="Mt. Diablo Iris Society" style="width:50%;border-radius:8px;box-shadow:0 4px 18px rgba(107,63,160,0.12);object-fit:cover;">
+      <img src="../images/IMG_5961.jpeg" alt="Mt. Diablo Iris Society" onclick="openLightbox(this.src)" style="width:50%;border-radius:8px;box-shadow:0 4px 18px rgba(107,63,160,0.12);object-fit:cover;cursor:zoom-in;">
+      <img src="../images/IMG_5962.jpeg" alt="Mt. Diablo Iris Society" onclick="openLightbox(this.src)" style="width:50%;border-radius:8px;box-shadow:0 4px 18px rgba(107,63,160,0.12);object-fit:cover;cursor:zoom-in;">
     </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" onclick="this.style.display='none'" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;align-items:center;justify-content:center;cursor:zoom-out;">
+      <img id="lightbox-img" src="" alt="" style="max-width:95vw;max-height:95vh;border-radius:6px;box-shadow:0 8px 40px rgba(0,0,0,0.5);">
+    </div>
+    <script>
+      function openLightbox(src) {
+        document.getElementById('lightbox-img').src = src;
+        document.getElementById('lightbox').style.display = 'flex';
+      }
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') document.getElementById('lightbox').style.display = 'none';
+      });
+    </script>
   </div>
 </section>
 
