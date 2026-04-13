@@ -393,6 +393,29 @@
       color: #888;
       margin-bottom: 10px;
     }
+    .shop-card.sold-out .shop-card-img { filter: grayscale(80%) opacity(0.6); }
+    .shop-card.sold-out .shop-card-body { opacity: 0.55; }
+    .shop-card.sold-out { position: relative; }
+    .sold-out-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(0,0,0,0.72);
+      color: #fff;
+      font-size: 0.7em;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 4px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .shop-add-btn:disabled {
+      background: #ddd;
+      color: #aaa;
+      cursor: not-allowed;
+    }
     /* Gradient per type */
     .type-TB  { background: linear-gradient(135deg,#5b2d9e,#9b6cd8 70%,#c9a84c); }
     .type-SDB { background: linear-gradient(135deg,#2d5b9e,#6ca0d8 70%,#c9a84c); }
@@ -541,6 +564,7 @@
 
         // Update "in cart" button states
         document.querySelectorAll('.shop-add-btn').forEach(btn => {
+          if (btn.disabled) return; // leave sold-out buttons alone
           const c = btn.dataset.code;
           btn.classList.toggle('in-cart', !!items[c]);
           btn.textContent = items[c] ? `✓ In List (${items[c].qty})` : '+ Add to List';
@@ -611,29 +635,35 @@
           countEl.textContent = '0 results';
           return;
         }
-        countEl.textContent = 'Showing ' + irises.length + ' of ' + allIrises.length + ' varieties';
+        const available = irises.filter(i => (i.count||0) > 0).length;
+        const total = irises.length;
+        countEl.textContent = available === total
+          ? total + ' varieties available'
+          : available + ' available · ' + (total - available) + ' sold out';
         irises.forEach(iris => { window.irisMap[iris.code || iris.name] = iris; });
         grid.innerHTML = irises.map(iris => {
           const st = shortType(iris.type);
           const icon = TYPE_ICONS[st] || '🌸';
           const tc = typeClass(iris.type);
           const code = iris.code || iris.name;
+          const soldOut = (iris.count || 0) === 0;
           return `
-            <div class="shop-card">
+            <div class="shop-card${soldOut ? ' sold-out' : ''}">
               <div class="shop-card-img ${tc}">
+                ${soldOut ? '<span class="sold-out-badge">Sold Out</span>' : ''}
                 ${iris.image ? `<img src="../images/${iris.image}" alt="${iris.name}" onerror="this.style.display='none';this.parentNode.dataset.noimg=1">` : icon}
               </div>
               <div class="shop-card-body">
                 <div class="shop-card-name">${iris.name}</div>
                 ${st ? `<span class="shop-card-type">${iris.type || st}</span>` : ''}
                 <div class="shop-card-price">$${parseFloat(iris.price || 8).toFixed(2)}</div>
-                <div class="shop-card-stock">${iris.count} in stock</div>
+                <div class="shop-card-stock" style="color:${soldOut ? '#c0392b' : '#888'}">${soldOut ? 'Sold out' : iris.count + ' in stock'}</div>
                 <div class="shop-card-actions">
                   ${iris.aisWiki
                     ? `<a href="${iris.aisWiki}" target="_blank" class="shop-card-link">AIS ↗</a>`
                     : ''}
-                  <button class="shop-add-btn" data-code="${code}" onclick="Cart.add('${code}')">
-                    + Add to List
+                  <button class="shop-add-btn" data-code="${code}" onclick="Cart.add('${code}')" ${soldOut ? 'disabled' : ''}>
+                    ${soldOut ? 'Sold Out' : '+ Add to List'}
                   </button>
                 </div>
               </div>
@@ -672,7 +702,11 @@
         fetch('../files/iris-inventory.json')
           .then(r => r.json())
           .then(irises => {
-            allIrises = irises.filter(i => (i.count || 0) > 0).sort((a,b) => a.name.localeCompare(b.name));
+            allIrises = irises.sort((a,b) => {
+              const aOut = (a.count||0) === 0, bOut = (b.count||0) === 0;
+              if (aOut !== bOut) return aOut ? 1 : -1; // sold-out goes last
+              return a.name.localeCompare(b.name);
+            });
             buildFilters(allIrises);
             render(allIrises);
           })
