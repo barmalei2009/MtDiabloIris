@@ -53,8 +53,270 @@
     .shop-count {
       font-size: 0.88em;
       color: #888;
+      white-space: nowrap;
+    }
+    /* Cart button */
+    .cart-btn {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 18px;
+      background: #3b1f5e;
+      color: #fff;
+      border: none;
+      border-radius: 22px;
+      font-size: 0.9em;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.18s;
       margin-left: auto;
       white-space: nowrap;
+    }
+    .cart-btn:hover { background: #6b3fa0; }
+    .cart-badge {
+      display: none;
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      background: #c9a84c;
+      color: #3b1f5e;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      font-size: 0.72em;
+      font-weight: 700;
+      align-items: center;
+      justify-content: center;
+    }
+    .cart-badge.visible { display: flex; }
+    /* Cart drawer */
+    .cart-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+      z-index: 1000;
+    }
+    .cart-overlay.open { display: block; }
+    .cart-drawer {
+      position: fixed;
+      top: 0;
+      right: -420px;
+      width: 400px;
+      max-width: 95vw;
+      height: 100vh;
+      background: #faf7f2;
+      box-shadow: -4px 0 32px rgba(59,31,94,0.18);
+      z-index: 1001;
+      display: flex;
+      flex-direction: column;
+      transition: right 0.28s cubic-bezier(.4,0,.2,1);
+    }
+    .cart-drawer.open { right: 0; }
+    .cart-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 22px 16px;
+      border-bottom: 1.5px solid #e8dff5;
+      background: #3b1f5e;
+      color: #fff;
+    }
+    .cart-header h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2em;
+      margin: 0;
+      font-weight: 600;
+    }
+    .cart-close {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.5em;
+      cursor: pointer;
+      line-height: 1;
+      padding: 0 4px;
+      opacity: 0.8;
+    }
+    .cart-close:hover { opacity: 1; }
+    .cart-items {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px 22px;
+    }
+    .cart-empty {
+      text-align: center;
+      color: #aaa;
+      padding: 60px 0 20px;
+      font-size: 1em;
+    }
+    .cart-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid #ede4f8;
+    }
+    .cart-item-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4em;
+      flex-shrink: 0;
+    }
+    .cart-item-info { flex: 1; min-width: 0; }
+    .cart-item-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.88em;
+      font-weight: 600;
+      color: #3b1f5e;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .cart-item-type {
+      font-size: 0.72em;
+      color: #9b6cd8;
+    }
+    .cart-qty {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      border: 1.5px solid #d4c5e8;
+      border-radius: 7px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .cart-qty button {
+      background: none;
+      border: none;
+      width: 26px;
+      height: 28px;
+      font-size: 1em;
+      cursor: pointer;
+      color: #6b3fa0;
+      font-weight: 700;
+      line-height: 1;
+    }
+    .cart-qty button:hover { background: #ede4f8; }
+    .cart-qty span {
+      min-width: 24px;
+      text-align: center;
+      font-size: 0.88em;
+      font-weight: 600;
+      color: #3b1f5e;
+      padding: 0 2px;
+    }
+    .cart-item-price {
+      font-size: 0.9em;
+      font-weight: 600;
+      color: #3b1f5e;
+      min-width: 44px;
+      text-align: right;
+      flex-shrink: 0;
+    }
+    .cart-remove {
+      background: none;
+      border: none;
+      color: #ccc;
+      font-size: 1.1em;
+      cursor: pointer;
+      padding: 0 2px;
+      flex-shrink: 0;
+    }
+    .cart-remove:hover { color: #c0392b; }
+    .cart-footer {
+      padding: 16px 22px 22px;
+      border-top: 1.5px solid #e8dff5;
+      background: #fff;
+    }
+    .cart-subtotal {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.05em;
+      font-weight: 700;
+      color: #3b1f5e;
+      margin-bottom: 14px;
+    }
+    .cart-subtotal span:last-child { color: #6b3fa0; }
+    .cart-actions { display: flex; gap: 10px; }
+    .cart-print-btn {
+      flex: 1;
+      padding: 11px;
+      background: #6b3fa0;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.92em;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background 0.18s;
+    }
+    .cart-print-btn:hover { background: #3b1f5e; }
+    .cart-clear-btn {
+      padding: 11px 14px;
+      background: none;
+      border: 1.5px solid #d4c5e8;
+      border-radius: 8px;
+      font-size: 0.85em;
+      color: #888;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.18s;
+    }
+    .cart-clear-btn:hover { border-color: #c0392b; color: #c0392b; }
+    /* Card action row */
+    .shop-card-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: auto;
+    }
+    .shop-card-link {
+      flex: 1;
+      display: block;
+      text-align: center;
+      padding: 7px 6px;
+      background: none;
+      border: 1.5px solid #6b3fa0;
+      color: #6b3fa0;
+      border-radius: 6px;
+      font-size: 0.78em;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.18s;
+    }
+    .shop-card-link:hover { background: #ede4f8; }
+    .shop-add-btn {
+      flex: 2;
+      padding: 7px 10px;
+      background: #6b3fa0;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.82em;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background 0.18s;
+      letter-spacing: 0.02em;
+    }
+    .shop-add-btn:hover { background: #3b1f5e; }
+    .shop-add-btn.in-cart { background: #c9a84c; color: #3b1f5e; }
+    .shop-add-btn.in-cart:hover { background: #b8943b; }
+    .shop-no-results {
+      grid-column: 1/-1;
+      text-align: center;
+      color: #888;
+      padding: 48px 0;
+      font-size: 1.05em;
     }
     .shop-grid {
       display: grid;
@@ -124,33 +386,6 @@
       color: #888;
       margin-bottom: 10px;
     }
-    .shop-card-link {
-      margin-top: auto;
-      display: block;
-      text-align: center;
-      padding: 7px 10px;
-      background: #6b3fa0;
-      color: #fff;
-      border-radius: 6px;
-      font-size: 0.8em;
-      font-weight: 500;
-      text-decoration: none;
-      letter-spacing: 0.04em;
-      transition: background 0.18s;
-    }
-    .shop-card-link:hover { background: #3b1f5e; }
-    .shop-card-link.no-link {
-      background: #ede4f8;
-      color: #9b6cd8;
-      pointer-events: none;
-    }
-    .shop-no-results {
-      grid-column: 1/-1;
-      text-align: center;
-      color: #888;
-      padding: 48px 0;
-      font-size: 1.05em;
-    }
     /* Gradient per type */
     .type-TB  { background: linear-gradient(135deg,#5b2d9e,#9b6cd8 70%,#c9a84c); }
     .type-SDB { background: linear-gradient(135deg,#2d5b9e,#6ca0d8 70%,#c9a84c); }
@@ -160,6 +395,14 @@
     .type-MDB { background: linear-gradient(135deg,#2d8a9e,#6cc8d8 70%,#c9a84c); }
     .type-LA  { background: linear-gradient(135deg,#3d9e2d,#7dd86c 70%,#c9a84c); }
     .type-SPU { background: linear-gradient(135deg,#9e3d2d,#d87d6c 70%,#c9a84c); }
+    /* Print styles */
+    @media print {
+      nav, .interior-header, .shop-toolbar, .cart-btn, .shop-card-actions,
+      .cart-overlay, .cart-drawer, footer, .shop-card-img { display: none !important; }
+      .shop-grid { display: block !important; }
+      .shop-card { box-shadow: none; break-inside: avoid; margin-bottom: 6px;
+        display: inline-block; width: 30%; margin-right: 2%; }
+    }
   </style>
 </head>
 <body>
@@ -193,41 +436,176 @@
         <input class="shop-search" id="shop-search" type="text" placeholder="Search irises…">
         <div class="shop-filters" id="shop-filters"></div>
         <span class="shop-count" id="iris-count"></span>
+        <button class="cart-btn" id="cart-open-btn" onclick="Cart.open()">
+          🛒 My List
+          <span class="cart-badge" id="cart-badge"></span>
+        </button>
       </div>
       <div class="shop-grid" id="iris-inventory-grid"></div>
       <p style="max-width:1200px;margin:2em auto 0;padding:0 24px;font-size:0.93em;color:#888;">
         📍 Alden Lane Nursery, 981 Alden Lane, Livermore, CA 94550 &nbsp;·&nbsp; 🕘 9:00 AM – 5:00 PM, April 25 &amp; 26, 2026
       </p>
     </section>
+
+    <!-- Cart Drawer -->
+    <div class="cart-overlay" id="cart-overlay" onclick="Cart.close()"></div>
+    <div class="cart-drawer" id="cart-drawer">
+      <div class="cart-header">
+        <h2>🛒 My Wish List</h2>
+        <button class="cart-close" onclick="Cart.close()" title="Close">✕</button>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-subtotal">
+          <span>Estimated Total</span>
+          <span id="cart-total">$0.00</span>
+        </div>
+        <div class="cart-actions">
+          <button class="cart-print-btn" onclick="Cart.print()">🖨 Print My List</button>
+          <button class="cart-clear-btn" onclick="Cart.clear()">Clear All</button>
+        </div>
+      </div>
+    </div>
     <script>
+    /* ── Cart ─────────────────────────────────────────────── */
+    const Cart = (function() {
+      const STORAGE_KEY = 'mdis_cart_2026';
+      let items = {};  // code -> {iris, qty}
+
+      function load() {
+        try { items = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch(e) { items = {}; }
+      }
+      function save() { localStorage.setItem(STORAGE_KEY, JSON.stringify(items)); }
+
+      function add(code, iris) {
+        if (!items[code]) items[code] = { iris, qty: 0 };
+        items[code].qty++;
+        save(); refresh();
+      }
+      function remove(code) { delete items[code]; save(); refresh(); }
+      function setQty(code, qty) {
+        if (qty < 1) { remove(code); return; }
+        if (items[code]) { items[code].qty = qty; save(); refresh(); }
+      }
+
+      function total() {
+        return Object.values(items).reduce((s, r) => s + r.qty * parseFloat(r.iris.price || 8), 0);
+      }
+      function count() {
+        return Object.values(items).reduce((s, r) => s + r.qty, 0);
+      }
+
+      function refresh() {
+        const n = count();
+        const badge = document.getElementById('cart-badge');
+        badge.textContent = n;
+        badge.classList.toggle('visible', n > 0);
+
+        const container = document.getElementById('cart-items');
+        const entries = Object.entries(items);
+        if (!entries.length) {
+          container.innerHTML = '<p class="cart-empty">🌸 Your list is empty.<br><small>Add irises you want to buy at the sale!</small></p>';
+        } else {
+          container.innerHTML = entries.map(([code, {iris, qty}]) => {
+            const st = shortType(iris.type);
+            const icon = TYPE_ICONS[st] || '🌸';
+            const tc = typeClass(iris.type);
+            return `<div class="cart-item">
+              <div class="cart-item-icon ${tc}">${icon}</div>
+              <div class="cart-item-info">
+                <div class="cart-item-name">${iris.name}</div>
+                <div class="cart-item-type">${iris.type || ''}</div>
+              </div>
+              <div class="cart-qty">
+                <button onclick="Cart.setQty('${code}', ${qty-1})">−</button>
+                <span>${qty}</span>
+                <button onclick="Cart.setQty('${code}', ${qty+1})">+</button>
+              </div>
+              <div class="cart-item-price">$${(qty * parseFloat(iris.price||8)).toFixed(2)}</div>
+              <button class="cart-remove" onclick="Cart.remove('${code}')" title="Remove">✕</button>
+            </div>`;
+          }).join('');
+        }
+        document.getElementById('cart-total').textContent = '$' + total().toFixed(2);
+
+        // Update "in cart" button states
+        document.querySelectorAll('.shop-add-btn').forEach(btn => {
+          const c = btn.dataset.code;
+          btn.classList.toggle('in-cart', !!items[c]);
+          btn.textContent = items[c] ? `✓ In List (${items[c].qty})` : '+ Add to List';
+        });
+      }
+
+      function open() {
+        document.getElementById('cart-drawer').classList.add('open');
+        document.getElementById('cart-overlay').classList.add('open');
+      }
+      function close() {
+        document.getElementById('cart-drawer').classList.remove('open');
+        document.getElementById('cart-overlay').classList.remove('open');
+      }
+      function clear() {
+        if (Object.keys(items).length && confirm('Clear your entire list?')) {
+          items = {}; save(); refresh();
+        }
+      }
+      function print() {
+        const entries = Object.entries(items);
+        if (!entries.length) { alert('Your list is empty!'); return; }
+        const rows = entries.map(([, {iris, qty}]) =>
+          `<tr><td>${iris.name}</td><td>${iris.type||''}</td><td>${qty}</td><td>$${(qty*parseFloat(iris.price||8)).toFixed(2)}</td></tr>`
+        ).join('');
+        const win = window.open('', '_blank');
+        win.document.write(`<!DOCTYPE html><html><head><title>My Iris List – MDIS Sale 2026</title>
+        <style>body{font-family:Georgia,serif;padding:32px;max-width:600px;margin:0 auto;}
+        h1{font-size:1.4em;margin-bottom:4px;}p{color:#666;margin:0 0 20px;}
+        table{width:100%;border-collapse:collapse;}th{background:#3b1f5e;color:#fff;padding:8px 10px;text-align:left;font-size:0.9em;}
+        td{padding:7px 10px;border-bottom:1px solid #eee;font-size:0.95em;}
+        tfoot td{font-weight:700;border-top:2px solid #3b1f5e;}</style></head><body>
+        <h1>🌸 My Iris Wish List</h1>
+        <p>Mt. Diablo Iris Society — Spring Sale, April 25/26, 2026<br>Alden Lane Nursery, Livermore CA</p>
+        <table><thead><tr><th>Iris</th><th>Type</th><th>Qty</th><th>Price</th></tr></thead>
+        <tbody>${rows}</tbody>
+        <tfoot><tr><td colspan="3">Total</td><td>$${total().toFixed(2)}</td></tr></tfoot>
+        </table></body></html>`);
+        win.document.close();
+        win.print();
+      }
+
+      load();
+      return { add, remove, setQty, open, close, clear, print, refresh };
+    })();
+
+    /* ── Shop ─────────────────────────────────────────────── */
     (function() {
       const TYPE_ICONS = { TB:'🌸', SDB:'🌼', IB:'💜', MTB:'🌺', BB:'🪻', MDB:'🌷', LA:'🌿', SPU:'✨' };
       let allIrises = [];
       let activeType = 'All';
 
-      function typeClass(type) {
+      window.typeClass = function(type) {
         if (!type) return '';
-        const t = type.split(/[,\s]/)[0].toUpperCase();
-        return 'type-' + t;
-      }
-      function shortType(type) {
+        return 'type-' + type.split(/[,\s]/)[0].toUpperCase();
+      };
+      window.shortType = function(type) {
         if (!type) return '';
         return type.split(/[,\s]/)[0].toUpperCase();
-      }
+      };
+      window.TYPE_ICONS = TYPE_ICONS;
 
       function render(irises) {
         const grid = document.getElementById('iris-inventory-grid');
-        const count = document.getElementById('iris-count');
+        const countEl = document.getElementById('iris-count');
         if (!irises.length) {
           grid.innerHTML = '<p class="shop-no-results">No irises found.</p>';
-          count.textContent = '0 results';
+          countEl.textContent = '0 results';
           return;
         }
-        count.textContent = 'Showing ' + irises.length + ' of ' + allIrises.length + ' varieties';
+        countEl.textContent = 'Showing ' + irises.length + ' of ' + allIrises.length + ' varieties';
         grid.innerHTML = irises.map(iris => {
           const st = shortType(iris.type);
           const icon = TYPE_ICONS[st] || '🌸';
           const tc = typeClass(iris.type);
+          const code = iris.code || iris.name;
           return `
             <div class="shop-card">
               <div class="shop-card-img ${tc}">${icon}</div>
@@ -236,31 +614,32 @@
                 ${st ? `<span class="shop-card-type">${iris.type || st}</span>` : ''}
                 <div class="shop-card-price">$${parseFloat(iris.price || 8).toFixed(2)}</div>
                 <div class="shop-card-stock">${iris.count} in stock</div>
-                ${iris.aisWiki
-                  ? `<a href="${iris.aisWiki}" target="_blank" class="shop-card-link">More Info ↗</a>`
-                  : `<span class="shop-card-link no-link">In Stock</span>`}
+                <div class="shop-card-actions">
+                  ${iris.aisWiki
+                    ? `<a href="${iris.aisWiki}" target="_blank" class="shop-card-link">AIS ↗</a>`
+                    : ''}
+                  <button class="shop-add-btn" data-code="${code}"
+                    onclick="Cart.add('${code}', ${JSON.stringify(iris).replace(/'/g,'&#39;')})">
+                    + Add to List
+                  </button>
+                </div>
               </div>
             </div>`;
         }).join('');
+        Cart.refresh();
       }
 
       function applyFilters() {
         const q = document.getElementById('shop-search').value.toLowerCase();
         let filtered = allIrises;
-        if (activeType !== 'All') {
-          filtered = filtered.filter(i => shortType(i.type) === activeType);
-        }
-        if (q) {
-          filtered = filtered.filter(i =>
-            i.name.toLowerCase().includes(q) ||
-            (i.type || '').toLowerCase().includes(q)
-          );
-        }
+        if (activeType !== 'All') filtered = filtered.filter(i => shortType(i.type) === activeType);
+        if (q) filtered = filtered.filter(i =>
+          i.name.toLowerCase().includes(q) || (i.type || '').toLowerCase().includes(q));
         render(filtered);
       }
 
       function buildFilters(irises) {
-        const types = ['All', ...new Set(irises.map(i => shortType(i.type)).filter(Boolean)).values()].sort((a,b) => a==='All'?-1:b==='All'?1:a.localeCompare(b));
+        const types = ['All', ...[...new Set(irises.map(i => shortType(i.type)).filter(Boolean))].sort()];
         const bar = document.getElementById('shop-filters');
         bar.innerHTML = types.map(t =>
           `<button class="filter-btn${t==='All'?' active':''}" data-type="${t}">${t}</button>`
@@ -280,9 +659,7 @@
         fetch('../files/iris-inventory.json')
           .then(r => r.json())
           .then(irises => {
-            allIrises = irises
-              .filter(i => (i.count || 0) > 0)
-              .sort((a, b) => a.name.localeCompare(b.name));
+            allIrises = irises.filter(i => (i.count || 0) > 0).sort((a,b) => a.name.localeCompare(b.name));
             buildFilters(allIrises);
             render(allIrises);
           })
