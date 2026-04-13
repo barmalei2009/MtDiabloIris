@@ -2096,7 +2096,7 @@
   },
   {
     "code": "IRIS0211",
-    "name": "Warrior Prince",
+    "name": "Warrior Prince"    cd /Users/sergey/Downloads/MtDiabloIris_website && git add images/after-the-storm.jpg && git commit -m "Add After The Storm photo" && git push,
     "type": "AB",
     "price": 8.0,
     "count": 1,
