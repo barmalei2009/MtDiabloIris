@@ -468,6 +468,8 @@
     </div>
     <script>
     /* ── Cart ─────────────────────────────────────────────── */
+    window.irisMap = {};  // populated by Shop renderer
+
     const Cart = (function() {
       const STORAGE_KEY = 'mdis_cart_2026';
       let items = {};  // code -> {iris, qty}
@@ -477,7 +479,9 @@
       }
       function save() { localStorage.setItem(STORAGE_KEY, JSON.stringify(items)); }
 
-      function add(code, iris) {
+      function add(code) {
+        const iris = window.irisMap[code];
+        if (!iris) return;
         if (!items[code]) items[code] = { iris, qty: 0 };
         items[code].qty++;
         save(); refresh();
@@ -601,6 +605,7 @@
           return;
         }
         countEl.textContent = 'Showing ' + irises.length + ' of ' + allIrises.length + ' varieties';
+        irises.forEach(iris => { window.irisMap[iris.code || iris.name] = iris; });
         grid.innerHTML = irises.map(iris => {
           const st = shortType(iris.type);
           const icon = TYPE_ICONS[st] || '🌸';
@@ -618,8 +623,7 @@
                   ${iris.aisWiki
                     ? `<a href="${iris.aisWiki}" target="_blank" class="shop-card-link">AIS ↗</a>`
                     : ''}
-                  <button class="shop-add-btn" data-code="${code}"
-                    onclick="Cart.add('${code}', ${JSON.stringify(iris).replace(/'/g,'&#39;')})">
+                  <button class="shop-add-btn" data-code="${code}" onclick="Cart.add('${code}')">
                     + Add to List
                   </button>
                 </div>
