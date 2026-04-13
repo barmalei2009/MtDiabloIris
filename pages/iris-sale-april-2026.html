@@ -6,6 +6,161 @@
   <title>Iris Sale April 25/26, 2026 - Mt. Diablo Iris Society</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .shop-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin: 0 auto 28px;
+      max-width: 1200px;
+      padding: 0 24px;
+    }
+    .shop-search {
+      flex: 1 1 220px;
+      padding: 9px 14px;
+      border: 1.5px solid #d4c5e8;
+      border-radius: 6px;
+      font-size: 0.95em;
+      font-family: inherit;
+      outline: none;
+      background: #faf7f2;
+      color: #3b1f5e;
+    }
+    .shop-search:focus { border-color: #6b3fa0; }
+    .shop-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .filter-btn {
+      padding: 6px 14px;
+      border: 1.5px solid #d4c5e8;
+      border-radius: 20px;
+      background: #fff;
+      color: #6b3fa0;
+      font-size: 0.82em;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.18s;
+      font-family: inherit;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: #6b3fa0;
+      color: #fff;
+      border-color: #6b3fa0;
+    }
+    .shop-count {
+      font-size: 0.88em;
+      color: #888;
+      margin-left: auto;
+      white-space: nowrap;
+    }
+    .shop-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .shop-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(59,31,94,0.09);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.18s, box-shadow 0.18s;
+    }
+    .shop-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 24px rgba(59,31,94,0.16);
+    }
+    .shop-card-img {
+      height: 130px;
+      background: linear-gradient(135deg, #6b3fa0 0%, #9b6cd8 60%, #c9a84c 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.8em;
+      position: relative;
+    }
+    .shop-card-body {
+      padding: 12px 14px 14px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .shop-card-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.97em;
+      font-weight: 600;
+      color: #3b1f5e;
+      margin: 0 0 6px;
+      line-height: 1.3;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    .shop-card-type {
+      display: inline-block;
+      font-size: 0.72em;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin-bottom: 8px;
+      background: #ede4f8;
+      color: #6b3fa0;
+      width: fit-content;
+    }
+    .shop-card-price {
+      font-size: 1.05em;
+      font-weight: 600;
+      color: #3b1f5e;
+      margin: 0 0 3px;
+    }
+    .shop-card-stock {
+      font-size: 0.78em;
+      color: #888;
+      margin-bottom: 10px;
+    }
+    .shop-card-link {
+      margin-top: auto;
+      display: block;
+      text-align: center;
+      padding: 7px 10px;
+      background: #6b3fa0;
+      color: #fff;
+      border-radius: 6px;
+      font-size: 0.8em;
+      font-weight: 500;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      transition: background 0.18s;
+    }
+    .shop-card-link:hover { background: #3b1f5e; }
+    .shop-card-link.no-link {
+      background: #ede4f8;
+      color: #9b6cd8;
+      pointer-events: none;
+    }
+    .shop-no-results {
+      grid-column: 1/-1;
+      text-align: center;
+      color: #888;
+      padding: 48px 0;
+      font-size: 1.05em;
+    }
+    /* Gradient per type */
+    .type-TB  { background: linear-gradient(135deg,#5b2d9e,#9b6cd8 70%,#c9a84c); }
+    .type-SDB { background: linear-gradient(135deg,#2d5b9e,#6ca0d8 70%,#c9a84c); }
+    .type-IB  { background: linear-gradient(135deg,#2d9e6e,#6cd8a0 70%,#c9a84c); }
+    .type-MTB { background: linear-gradient(135deg,#9e6b2d,#d8a06c 70%,#c9a84c); }
+    .type-BB  { background: linear-gradient(135deg,#9e2d5b,#d86c9b 70%,#c9a84c); }
+    .type-MDB { background: linear-gradient(135deg,#2d8a9e,#6cc8d8 70%,#c9a84c); }
+    .type-LA  { background: linear-gradient(135deg,#3d9e2d,#7dd86c 70%,#c9a84c); }
+    .type-SPU { background: linear-gradient(135deg,#9e3d2d,#d87d6c 70%,#c9a84c); }
+  </style>
 </head>
 <body>
   <nav>
@@ -33,34 +188,110 @@
         <p class="section-body">Join us for our annual spring iris sale! Browse a wide selection of bearded and beardless irises, meet fellow gardeners, and get expert advice. Perfect timing for spring planting!</p>
       </div>
     </section>
-    <section class="about-section reveal">
-      <p id="iris-count" style="text-align:center;font-size:0.95em;color:#6b3fa0;margin-bottom:20px;font-weight:500;"></p>
-      <div class="about-card-grid" id="iris-inventory-grid" style="grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px;"></div>
-      <p style="margin-top:2em; font-size:0.95em; color:#666;">Sale location: Alden Lane Nursery, 981 Alden Lane, Livermore, CA 94550<br>Sale hours: 9:00 AM – 5:00 PM, April 25 & 26, 2026</p>
+    <section class="about-section reveal" style="padding-top:32px;">
+      <div class="shop-toolbar">
+        <input class="shop-search" id="shop-search" type="text" placeholder="Search irises…">
+        <div class="shop-filters" id="shop-filters"></div>
+        <span class="shop-count" id="iris-count"></span>
+      </div>
+      <div class="shop-grid" id="iris-inventory-grid"></div>
+      <p style="max-width:1200px;margin:2em auto 0;padding:0 24px;font-size:0.93em;color:#888;">
+        📍 Alden Lane Nursery, 981 Alden Lane, Livermore, CA 94550 &nbsp;·&nbsp; 🕘 9:00 AM – 5:00 PM, April 25 &amp; 26, 2026
+      </p>
     </section>
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const grid = document.getElementById('iris-inventory-grid');
-      if (!grid) return;
-      fetch('../files/iris-inventory.json')
-        .then(response => response.json())
-        .then(irises => {
-          const available = irises.filter(i => (i.count || 0) > 0);
-          grid.innerHTML = available.map(iris => `
-            <div class="about-card" style="padding:12px 10px;">
-              <h3 style="margin:0 0 4px;font-size:0.92em;line-height:1.3;">${iris.name}</h3>
-              ${iris.type ? `<p style="margin:2px 0;font-size:0.78em;color:#6b3fa0;font-weight:500;">${iris.type}</p>` : ''}
-              <p style="margin:4px 0 2px;font-size:0.88em;color:#444;">$${parseFloat(iris.price).toFixed(2)} <span style="color:#888;font-size:0.8em;">(${iris.count} in stock)</span></p>
-              ${iris.aisWiki ? `<a href="${iris.aisWiki}" target="_blank" style="display:inline-block;margin-top:5px;font-size:0.75em;color:#6b3fa0;text-decoration:underline;">AIS Info ↗</a>` : ''}
-            </div>
-          `).join('');
-          document.getElementById('iris-count').textContent = available.length + ' varieties available';
-        })
-        .catch(err => {
-          grid.innerHTML = '<p>Could not load iris inventory.</p>';
-          console.error('Iris inventory load error:', err);
+    (function() {
+      const TYPE_ICONS = { TB:'🌸', SDB:'🌼', IB:'💜', MTB:'🌺', BB:'🪻', MDB:'🌷', LA:'🌿', SPU:'✨' };
+      let allIrises = [];
+      let activeType = 'All';
+
+      function typeClass(type) {
+        if (!type) return '';
+        const t = type.split(/[,\s]/)[0].toUpperCase();
+        return 'type-' + t;
+      }
+      function shortType(type) {
+        if (!type) return '';
+        return type.split(/[,\s]/)[0].toUpperCase();
+      }
+
+      function render(irises) {
+        const grid = document.getElementById('iris-inventory-grid');
+        const count = document.getElementById('iris-count');
+        if (!irises.length) {
+          grid.innerHTML = '<p class="shop-no-results">No irises found.</p>';
+          count.textContent = '0 results';
+          return;
+        }
+        count.textContent = 'Showing ' + irises.length + ' of ' + allIrises.length + ' varieties';
+        grid.innerHTML = irises.map(iris => {
+          const st = shortType(iris.type);
+          const icon = TYPE_ICONS[st] || '🌸';
+          const tc = typeClass(iris.type);
+          return `
+            <div class="shop-card">
+              <div class="shop-card-img ${tc}">${icon}</div>
+              <div class="shop-card-body">
+                <div class="shop-card-name">${iris.name}</div>
+                ${st ? `<span class="shop-card-type">${iris.type || st}</span>` : ''}
+                <div class="shop-card-price">$${parseFloat(iris.price || 8).toFixed(2)}</div>
+                <div class="shop-card-stock">${iris.count} in stock</div>
+                ${iris.aisWiki
+                  ? `<a href="${iris.aisWiki}" target="_blank" class="shop-card-link">More Info ↗</a>`
+                  : `<span class="shop-card-link no-link">In Stock</span>`}
+              </div>
+            </div>`;
+        }).join('');
+      }
+
+      function applyFilters() {
+        const q = document.getElementById('shop-search').value.toLowerCase();
+        let filtered = allIrises;
+        if (activeType !== 'All') {
+          filtered = filtered.filter(i => shortType(i.type) === activeType);
+        }
+        if (q) {
+          filtered = filtered.filter(i =>
+            i.name.toLowerCase().includes(q) ||
+            (i.type || '').toLowerCase().includes(q)
+          );
+        }
+        render(filtered);
+      }
+
+      function buildFilters(irises) {
+        const types = ['All', ...new Set(irises.map(i => shortType(i.type)).filter(Boolean)).values()].sort((a,b) => a==='All'?-1:b==='All'?1:a.localeCompare(b));
+        const bar = document.getElementById('shop-filters');
+        bar.innerHTML = types.map(t =>
+          `<button class="filter-btn${t==='All'?' active':''}" data-type="${t}">${t}</button>`
+        ).join('');
+        bar.querySelectorAll('.filter-btn').forEach(btn => {
+          btn.addEventListener('click', function() {
+            bar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            activeType = this.dataset.type;
+            applyFilters();
+          });
         });
-    });
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('shop-search').addEventListener('input', applyFilters);
+        fetch('../files/iris-inventory.json')
+          .then(r => r.json())
+          .then(irises => {
+            allIrises = irises
+              .filter(i => (i.count || 0) > 0)
+              .sort((a, b) => a.name.localeCompare(b.name));
+            buildFilters(allIrises);
+            render(allIrises);
+          })
+          .catch(err => {
+            document.getElementById('iris-inventory-grid').innerHTML = '<p class="shop-no-results">Could not load inventory.</p>';
+            console.error(err);
+          });
+      });
+    })();
     </script>
   </main>
   <footer>
