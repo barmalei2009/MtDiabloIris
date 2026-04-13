@@ -621,8 +621,8 @@
           return `
             <div class="shop-card">
               <div class="shop-card-img ${tc}">
-                ${iris.image ? `<img src="../images/${iris.image}" alt="${iris.name}" onerror="this.parentNode.innerHTML='${icon}'">` : icon}
-              </div>`
+                ${iris.image ? `<img src="../images/${iris.image}" alt="${iris.name}" onerror="this.style.display='none';this.parentNode.dataset.noimg=1">` : icon}
+              </div>
               <div class="shop-card-body">
                 <div class="shop-card-name">${iris.name}</div>
                 ${st ? `<span class="shop-card-type">${iris.type || st}</span>` : ''}
