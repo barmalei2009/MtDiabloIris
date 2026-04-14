@@ -3,7 +3,7 @@
     "code": "IRIS0001",
     "name": "After The Storm",
     "price": 8.0,
-    "count": 7,
+    "count": 1,
     "description": "Classic bearded iris, lavender-blue with white center.",
     "image": "after-the-storm.jpg",
     "aisWiki": "https://wiki.irises.org/TbAthruE/TbAfterTheStorm"
@@ -12,7 +12,7 @@
     "code": "IRIS0002",
     "name": "Autumn Circus",
     "price": 8.0,
-    "count": 4,
+    "count": 1,
     "description": "White standards, purple falls, ruffled.",
     "image": "autumn-circus.jpg",
     "aisWiki": "https://wiki.irises.org/TbAthruA/TbAutumnCircus"
@@ -21,7 +21,7 @@
     "code": "IRIS0003",
     "name": "Baltic Sea",
     "price": 8.0,
-    "count": 3,
+    "count": 1,
     "description": "Deep blue, vigorous grower.",
     "image": "baltic-sea.jpg",
     "aisWiki": "https://wiki.irises.org/TbB/TbBalticSea"
@@ -30,7 +30,7 @@
     "code": "IRIS0004",
     "name": "Before The Storm",
     "price": 8.0,
-    "count": 3,
+    "count": 1,
     "description": "Near-black, velvety petals.",
     "image": "before-the-storm.jpg",
     "aisWiki": "https://wiki.irises.org/TbB/TbBeforeTheStorm"
@@ -39,7 +39,7 @@
     "code": "IRIS0005",
     "name": "Blazing Beacon",
     "price": 8.0,
-    "count": 3,
+    "count": 1,
     "description": "Bright yellow standards, red falls.",
     "image": "blazing-beacon.jpg",
     "aisWiki": "https://wiki.irises.org/TbB/TbBlazingBeacon"
@@ -159,7 +159,7 @@
     "name": "BARN DANCE",
     "type": "TB",
     "price": 8.0,
-    "count": 2,
+    "count": 1,
     "description": "TB iris.",
     "image": "",
     "aisWiki": ""
@@ -199,7 +199,7 @@
     "name": "Black Lipstick",
     "type": "TB",
     "price": 8.0,
-    "count": 2,
+    "count": 1,
     "description": "TB iris.",
     "image": "",
     "aisWiki": ""
@@ -219,7 +219,7 @@
     "name": "Blackberry Torte",
     "type": "TB",
     "price": 8.0,
-    "count": 2,
+    "count": 1,
     "description": "TB iris.",
     "image": "",
     "aisWiki": ""
@@ -229,7 +229,7 @@
     "name": "Blue Me Away",
     "type": "TB",
     "price": 8.0,
-    "count": 2,
+    "count": 1,
     "description": "TB iris.",
     "image": "",
     "aisWiki": ""
@@ -309,7 +309,7 @@
     "name": "Bundle of Love",
     "type": "TB",
     "price": 8.0,
-    "count": 2,
+    "count": 1,
     "description": "TB iris.",
     "image": "",
     "aisWiki": ""
@@ -319,7 +319,7 @@
     "name": "Butterfly Skies",
     "type": "TB",
     "price": 8.0,
-    "count": 2,
+    "count": 1,
     "description": "TB iris.",
     "image": "",
     "aisWiki": ""
@@ -339,7 +339,7 @@
     "name": "Cabbage Patch",
     "type": "TB",
     "price": 8.0,
-    "count": 2,
+    "count": 1,
     "description": "TB iris.",
     "image": "",
     "aisWiki": ""
@@ -349,7 +349,7 @@
     "name": "Cache of Gold",
     "type": "SDB",
     "price": 8.0,
-    "count": 2,
+    "count": 1,
     "description": "SDB iris.",
     "image": "",
     "aisWiki": ""
@@ -369,7 +369,7 @@
     "name": "CAROLINE JANE",
     "type": "TB",
     "price": 8.0,
-    "count": 2,
+    "count": 1,
     "description": "TB iris.",
     "image": "",
     "aisWiki": ""
@@ -409,7 +409,7 @@
     "name": "Church Key",
     "type": "TB",
     "price": 8.0,
-    "count": 2,
+    "count": 1,
     "description": "TB iris.",
     "image": "",
     "aisWiki": ""
@@ -429,7 +429,7 @@
     "name": "City Lights",
     "type": "TB",
     "price": 8.0,
-    "count": 2,
+    "count": 1,
     "description": "TB iris.",
     "image": "",
     "aisWiki": ""
@@ -439,7 +439,7 @@
     "name": "Clarence",
     "type": "TB",
     "price": 8.0,
-    "count": 2,
+    "count": 1,
     "description": "TB iris.",
     "image": "",
     "aisWiki": ""
@@ -1829,7 +1829,7 @@
     "name": "Smooth as a Baby\u2019s",
     "type": "IB",
     "price": 8.0,
-    "count": 2,
+    "count": 1,
     "description": "IB iris.",
     "image": "",
     "aisWiki": ""
@@ -1859,7 +1859,7 @@
     "name": "Southpoint",
     "type": "TB",
     "price": 8.0,
-    "count": 3,
+    "count": 1,
     "description": "TB iris.",
     "image": "",
     "aisWiki": ""
@@ -1929,7 +1929,7 @@
     "name": "SUGAR HIGH",
     "type": "TB",
     "price": 8.0,
-    "count": 8,
+    "count": 1,
     "description": "TB iris.",
     "image": "",
     "aisWiki": ""
@@ -1939,7 +1939,7 @@
     "name": "Syrian Hills",
     "type": "TB",
     "price": 8.0,
-    "count": 5,
+    "count": 1,
     "description": "TB iris.",
     "image": "",
     "aisWiki": ""
