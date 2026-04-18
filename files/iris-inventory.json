@@ -162,7 +162,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "barn-dance.jpg",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbBARNDANCE"
+    "aisWiki": "https://wiki.irises.org/TbAthruE/TbBarnDance"
   },
   {
     "code": "IRIS0018",
@@ -182,7 +182,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "Best-Bet.jpg",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbBESTBET"
+    "aisWiki": "https://wiki.irises.org/TbAthruE/TbBestBet"
   },
   {
     "code": "IRIS0020",
@@ -242,7 +242,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "Blue-Pools.jpg",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbBLUEPOOLS"
+    "aisWiki": "https://wiki.irises.org/Sdb/SdbBluePools"
   },
   {
     "code": "IRIS0026",
@@ -302,7 +302,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "Buckwheat.jpg",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbBUCKWHEAT"
+    "aisWiki": "https://wiki.irises.org/TbAthruE/TbBuckwheat"
   },
   {
     "code": "IRIS0032",
@@ -362,7 +362,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "California-Gold.jpg",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbCALIFORNIAGOLD"
+    "aisWiki": "https://wiki.irises.org/TbAthruE/TbCaliforniaGold"
   },
   {
     "code": "IRIS0038",
@@ -372,7 +372,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "caroline-jane.jpg",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbCAROLINEJANE"
+    "aisWiki": "https://wiki.irises.org/TbAthruE/TbCarolineJane"
   },
   {
     "code": "IRIS0039",
@@ -382,7 +382,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "champagne-elegance.jpg",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbCHAMPAGNEELEGANCE"
+    "aisWiki": "https://wiki.irises.org/TbAthruE/TbChampagneElegance"
   },
   {
     "code": "IRIS0040",
@@ -392,7 +392,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "cherieI.jpg",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbCHERIE"
+    "aisWiki": "https://wiki.irises.org/TbAthruE/TbCherie"
   },
   {
     "code": "IRIS0041",
@@ -452,7 +452,7 @@
     "count": 1,
     "description": "IB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Ib/IbCodeofHonor"
+    "aisWiki": "https://wiki.irises.org/Ib/IbCodeOfHonor"
   },
   {
     "code": "IRIS0047",
@@ -532,7 +532,7 @@
     "count": 1,
     "description": "AB iris.",
     "image": "",
-    "aisWiki": ""
+    "aisWiki": "https://wiki.irises.org/Ab/AbCreativeArt"
   },
   {
     "code": "IRIS0055",
@@ -2132,7 +2132,7 @@
     "count": 1,
     "description": "SDB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Sdb/SdbADORBS"
+    "aisWiki": "https://www.wiki.irises.org/Sdb/SdbAdorbs"
   },
   {
     "code": "IRIS0215",
@@ -2142,7 +2142,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbAMPLECHARM"
+    "aisWiki": "https://wiki.irises.org/TbAthruE/TbAmpleCharm"
   },
   {
     "code": "IRIS0216",
@@ -2152,7 +2152,7 @@
     "count": 2,
     "description": "SDB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Sdb/SdbBABYBLESSED"
+    "aisWiki": "https://wiki.irises.org/Sdb/SdbBabyBlessed"
   },
   {
     "code": "IRIS0217",
@@ -2162,7 +2162,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbBATTLESTARATLANTIS"
+    "aisWiki": "https://wiki.irises.org/TbAthruE/TbBattlestarAtlantis"
   },
   {
     "code": "IRIS0218",
@@ -2172,7 +2172,7 @@
     "count": 1,
     "description": "SDB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Sdb/SdbBEGUILEME"
+    "aisWiki": "https://wiki.irises.org/Sdb/SdbBeguileMe"
   },
   {
     "code": "IRIS0219",
@@ -2182,7 +2182,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbBREAKINGTHEICE"
+    "aisWiki": "https://wiki.irises.org/TbAthruE/TbBreakingTheIce"
   },
   {
     "code": "IRIS0220",
@@ -2192,7 +2192,7 @@
     "count": 2,
     "description": "SDB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Sdb/SdbBUFFBRUISER"
+    "aisWiki": "https://wiki.irises.org/Sdb/SdbBuffBruiser"
   },
   {
     "code": "IRIS0221",
@@ -2202,7 +2202,7 @@
     "count": 4,
     "description": "BB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Bb/BbBUNDLEOFLOVE"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0222",
@@ -2212,7 +2212,7 @@
     "count": 1,
     "description": "SDB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Sdb/SdbCACHEOFGOLD"
+    "aisWiki": "https://wiki.irises.org/Sdb/SdbCacheOfGold"
   },
   {
     "code": "IRIS0223",
@@ -2222,7 +2222,7 @@
     "count": 3,
     "description": "BB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Bb/BbCALICOINPINK"
+    "aisWiki": "https://wiki.irises.org/Bb/BbCalicoInPink"
   },
   {
     "code": "IRIS0224",
@@ -2232,7 +2232,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbCARELESSWHISPER"
+    "aisWiki": "https://wiki.irises.org/TbAthruE/TbCarelessWhisper"
   },
   {
     "code": "IRIS0225",
@@ -2242,7 +2242,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbCARIBBEANCRUISE"
+    "aisWiki": "https://wiki.irises.org/TbAthruE/TbCaribbeanCruise"
   },
   {
     "code": "IRIS0226",
@@ -2252,7 +2252,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbCHAMPAGNEELEGANCE"
+    "aisWiki": "https://wiki.irises.org/TbAthruE/TbChampagneElegance"
   },
   {
     "code": "IRIS0227",
@@ -2262,7 +2262,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbCOLOURSOFTHEWIND"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0228",
@@ -2272,7 +2272,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbCORALPOINT"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0229",
@@ -2282,7 +2282,7 @@
     "count": 2,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbCORONAGOLD"
+    "aisWiki": "https://wiki.irises.org/TbAthruE/TbCoronaGold"
   },
   {
     "code": "IRIS0230",
@@ -2292,7 +2292,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbCOTILLIONGOWN"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0231",
@@ -2302,7 +2302,7 @@
     "count": 2,
     "description": "IB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Ib/IbCRIMSONKING"
+    "aisWiki": "https://wiki.irises.org/Ib/IbCrimsonKing"
   },
   {
     "code": "IRIS0232",
@@ -2312,7 +2312,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbCUSTOMRIM"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0233",
@@ -2322,7 +2322,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbDIAMONDLAKE"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0234",
@@ -2332,7 +2332,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbDIVERSION"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0235",
@@ -2342,7 +2342,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbDOLLFACE"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0236",
@@ -2352,7 +2352,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbDONPEDROSUNSHINE"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0237",
@@ -2362,7 +2362,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbDOUBLERINGER"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0238",
@@ -2372,7 +2372,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbEASTERCANDY"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0239",
@@ -2382,7 +2382,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbENJOYMENT"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0240",
@@ -2392,7 +2392,7 @@
     "count": 1,
     "description": "SDB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Sdb/SdbENVIOUSME"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0241",
@@ -2402,7 +2402,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbFthruJ/TbGINGERICE"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0242",
@@ -2412,7 +2412,7 @@
     "count": 1,
     "description": "IB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Ib/IbGRINDELWALD"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0243",
@@ -2422,7 +2422,7 @@
     "count": 2,
     "description": "MTB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Main/Mtb/MtbHOTNEWS"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0244",
@@ -2432,7 +2432,7 @@
     "count": 1,
     "description": "SP iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Sp/SpIFOETIDISSIMA"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0245",
@@ -2442,7 +2442,7 @@
     "count": 1,
     "description": "SDB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Sdb/SdbIMSOENVIOUS"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0246",
@@ -2452,7 +2452,7 @@
     "count": 1,
     "description": "MTB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Main/Mtb/MtbLADYEMMA"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0247",
@@ -2462,7 +2462,7 @@
     "count": 2,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbKthruO/TbLETSHAVEFUN"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0248",
@@ -2472,7 +2472,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbKthruO/TbMETEORITE"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0249",
@@ -2482,7 +2482,7 @@
     "count": 1,
     "description": "SDB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Sdb/SdbMISTYMAGIC"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0250",
@@ -2492,7 +2492,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbPthruT/TbPEACHPEARL"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0251",
@@ -2502,7 +2502,7 @@
     "count": 2,
     "description": "SDB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Sdb/SdbPEEKANDSEEK"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0252",
@@ -2512,7 +2512,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbPthruT/TbPICKATHON"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0253",
@@ -2522,7 +2522,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbPthruT/TbPINKCONFETTI"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0254",
@@ -2532,7 +2532,7 @@
     "count": 1,
     "description": "SDB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Sdb/SdbPINKIEPIE"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0255",
@@ -2542,7 +2542,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbPthruT/TbRENOWN"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0256",
@@ -2552,7 +2552,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbPthruT/TbSARAHSUNSHINE"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0257",
@@ -2562,7 +2562,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbPthruT/TbSCENTEDNUTMEG"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0258",
@@ -2572,7 +2572,7 @@
     "count": 2,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbPthruT/TbSHADESOFPALE"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0259",
@@ -2582,7 +2582,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbPthruT/TbSILKANDHONEY"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0260",
@@ -2592,7 +2592,7 @@
     "count": 1,
     "description": "MTB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Main/Mtb/MtbSILVERICE"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0261",
@@ -2602,7 +2602,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbPthruT/TbSTRUCKTRICE"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0262",
@@ -2612,7 +2612,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbPthruT/TbSUREENUFF"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0263",
@@ -2622,7 +2622,7 @@
     "count": 1,
     "description": "TB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/TbPthruT/TbTOUCHEDBYANGELS"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0264",
@@ -2632,7 +2632,7 @@
     "count": 1,
     "description": "IB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Ib/IbTRIPOD"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0265",
@@ -2642,7 +2642,7 @@
     "count": 1,
     "description": "SDB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Sdb/SdbUNCOMMONART"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0266",
@@ -2652,7 +2652,7 @@
     "count": 3,
     "description": "IB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Ib/IbVIPER"
+    "aisWiki": ""
   },
   {
     "code": "IRIS0267",
@@ -2662,6 +2662,6 @@
     "count": 1,
     "description": "SDB iris.",
     "image": "",
-    "aisWiki": "https://wiki.irises.org/Sdb/SdbYUKONWONDERPIE"
+    "aisWiki": ""
   }
 ]
