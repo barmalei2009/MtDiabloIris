@@ -659,9 +659,7 @@
                 <div class="shop-card-price">$${parseFloat(iris.price || 8).toFixed(2)}</div>
                 <div class="shop-card-stock" style="color:${soldOut ? '#c0392b' : '#888'}">${soldOut ? 'Sold out' : iris.count + ' in stock'}</div>
                 <div class="shop-card-actions">
-                  ${iris.aisWiki
-                    ? `<a href="${iris.aisWiki}" target="_blank" class="shop-card-link">AIS ↗</a>`
-                    : ''}
+                  <a href="${iris.aisWiki || '#'}" target="_blank" class="shop-card-link">${iris.aisWiki ? 'AIS ↗' : 'AIS (add URL)'}</a>
                   <button class="shop-add-btn" data-code="${code}" onclick="Cart.add('${code}')" ${soldOut ? 'disabled' : ''}>
                     ${soldOut ? 'Sold Out' : '+ Add to List'}
                   </button>
