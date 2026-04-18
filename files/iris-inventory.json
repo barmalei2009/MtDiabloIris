@@ -2245,16 +2245,6 @@
     "aisWiki": "https://wiki.irises.org/TbAthruE/TbCaribbeanCruise"
   },
   {
-    "code": "IRIS0226",
-    "name": "CHAMPAGNE ELEGANCE",
-    "type": "TB",
-    "price": 8.0,
-    "count": 1,
-    "description": "TB iris.",
-    "image": "",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbChampagneElegance"
-  },
-  {
     "code": "IRIS0227",
     "name": "COLOURS OF THE WIND",
     "type": "TB",
@@ -2353,16 +2343,6 @@
     "description": "TB iris.",
     "image": "",
     "aisWiki": "https://wiki.irises.org/TbAthruE/TbDonPedroSunshine"
-  },
-  {
-    "code": "IRIS0237",
-    "name": "DOUBLE RINGER",
-    "type": "TB",
-    "price": 8.0,
-    "count": 1,
-    "description": "TB iris.",
-    "image": "",
-    "aisWiki": "https://wiki.irises.org/TbAthruE/TbDoubleRinger"
   },
   {
     "code": "IRIS0238",
