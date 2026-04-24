@@ -1,0 +1,83 @@
+{
+  "name": "Inventory Scanner Skill",
+  "version": "1.0",
+  "description": "Skill file defining commands and capabilities for the iris inventory scanner",
+  "author": "Mt. Diablo Iris Society",
+  "skills": [
+    {
+      "id": "scan_add",
+      "name": "Scan to Add",
+      "description": "Scan or enter a barcode code to add 1 to inventory count",
+      "command": "Enter barcode (e.g., IRIS001)",
+      "mode": "add",
+      "action": "increment_count"
+    },
+    {
+      "id": "scan_sell",
+      "name": "Scan to Sell",
+      "description": "Scan or enter a barcode code to subtract 1 from inventory count",
+      "command": "Enter barcode (e.g., IRIS001)",
+      "mode": "sell",
+      "action": "decrement_count"
+    },
+    {
+      "id": "force_subtract",
+      "name": "Force Subtract",
+      "description": "Force subtract 1 from inventory count regardless of mode",
+      "command": "-CODE (e.g., -IRIS001)",
+      "action": "decrement_count"
+    },
+    {
+      "id": "switch_mode_add",
+      "name": "Switch to Add Mode",
+      "description": "Switch scanner to ADD mode where scans increase count",
+      "command": "mode add",
+      "action": "set_mode",
+      "parameters": {"mode": "add"}
+    },
+    {
+      "id": "switch_mode_sell",
+      "name": "Switch to Sell Mode",
+      "description": "Switch scanner to SELL mode where scans decrease count",
+      "command": "mode sell",
+      "action": "set_mode",
+      "parameters": {"mode": "sell"}
+    },
+    {
+      "id": "list_inventory",
+      "name": "List Inventory",
+      "description": "Display current inventory with codes, names, and counts",
+      "command": "list",
+      "action": "display_inventory"
+    },
+    {
+      "id": "quit_save",
+      "name": "Quit and Save",
+      "description": "Exit the scanner and save changes to inventory file",
+      "command": "quit",
+      "action": "save_and_exit"
+    },
+    {
+      "id": "help",
+      "name": "Help",
+      "description": "Display available commands",
+      "command": "help",
+      "action": "show_help"
+    }
+  ],
+  "modes": [
+    {
+      "name": "add",
+      "description": "Default mode: scans increase inventory count"
+    },
+    {
+      "name": "sell",
+      "description": "Sell mode: scans decrease inventory count"
+    }
+  ],
+  "dependencies": [
+    "Python 3.x",
+    "iris-inventory.json file in ../files/"
+  ],
+  "usage": "Run 'python inventory_scanner.py' from scripts directory"
+}
