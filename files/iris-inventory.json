@@ -419,7 +419,7 @@
     "name": "Cinque Terre",
     "type": "TB",
     "price": 8.0,
-    "count": 1,
+    "count": 0,
     "description": "TB iris.",
     "image": "Cinque-Terre.jpg",
     "aisWiki": "https://wiki.irises.org/TbAthruE/TbCinqueTerre"
@@ -449,7 +449,7 @@
     "name": "Code of Honor",
     "type": "IB",
     "price": 8.0,
-    "count": 1,
+    "count": 0,
     "description": "IB iris.",
     "image": "",
     "aisWiki": "https://wiki.irises.org/Ib/IbCodeOfHonor"
@@ -2811,6 +2811,15 @@
     "name": "VALLEY OF DREAMS",
     "price": 8.0,
     "count": 2,
+    "description": "",
+    "image": "",
+    "aisWiki": ""
+  },
+  {
+    "code": "MODEL SELL",
+    "name": "2026/04/24 13:47:33 IRIS0046",
+    "price": 8.0,
+    "count": 1,
     "description": "",
     "image": "",
     "aisWiki": ""
