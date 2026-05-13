@@ -8,6 +8,7 @@
   --gold-light: #e8d08a;
   --cream: #faf7f2;
   --charcoal: #2a2035;
+  --text-dark: #2a2035;
   --text-mid: #5a4a6a;
   --white: #ffffff;
 }
@@ -1174,19 +1175,6 @@ ul li {
 
 .event-note {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 15px;
-  color: var(--text-mid);
-}
-
-.event-time {
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--iris-deep);
-}
-
-.event-note {
-  font-family: 'Cormorant Garamond', serif;
   font-size: 14px;
   color: var(--text-mid);
 }
@@ -1508,8 +1496,8 @@ footer {
 
 /* ── SCROLL REVEAL ── */
 .reveal {
-  opacity: 1;
-  transform: translateY(0);
+  opacity: 0;
+  transform: translateY(20px);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
@@ -1735,6 +1723,52 @@ footer {
   opacity: 1;
 }
 
+/* ── ABOUT IRIS PAGE ── */
+.iris-fundamentals,
+.iris-types,
+.iris-history {
+  padding: 60px 80px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.iris-fundamentals h2,
+.iris-types h2,
+.iris-history h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 3.5vw, 42px);
+  font-weight: 700;
+  color: var(--iris-deep);
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--iris-pale);
+}
+
+.iris-fundamentals p,
+.iris-types p,
+.iris-history p {
+  font-size: 18px;
+  line-height: 1.85;
+  color: var(--text-mid);
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.iris-fundamentals a,
+.iris-types a,
+.iris-history a {
+  color: var(--iris-mid);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .iris-fundamentals,
+  .iris-types,
+  .iris-history {
+    padding: 40px 32px;
+  }
+}
+
 /* Interior page layout (matches Events page) */
 .page-section {
   padding: 110px 80px;
@@ -1781,6 +1815,7 @@ footer {
   box-shadow: 0 4px 20px rgba(59, 31, 94, 0.10);
   overflow: hidden;
   position: relative;
+  transition: all 0.3s ease;
 }
 
 .resources-poster-card::before {
@@ -1791,6 +1826,18 @@ footer {
   right: 0;
   height: 3px;
   background: linear-gradient(to right, var(--iris-mid), var(--iris-light));
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.resources-poster-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(107, 63, 160, 0.15);
+}
+
+.resources-poster-card img {
+  width: 100%;
+  display: block;
 }
 
 .resources-poster-caption {
@@ -1838,80 +1885,12 @@ footer {
     padding: 60px 32px;
   }
 
-@media (max-width: 768px) {
+  .gallery-page-grid .gallery-item {
+    height: 200px;
+  }
+
   .interior-hero {
     padding: 120px 32px 80px;
   }
 }
-.content-wrapper {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 60px;
-}
 
-  .page-section {
-  padding: 110px 80px;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-/* Unified interior page header */
-.interior-header {
-  padding: 110px 80px 60px;
-  background: var(--cream);
-}
-
-.interior-header-inner {
-  max-width: 1240px;
-  margin: 0 auto;
-}
-
-/* Poster card for Resources page */
-.resources-poster-card {
-  background: var(--white);
-  border-radius: 4px;
-  border: 1px solid rgba(155, 111, 212, 0.12);
-  box-shadow: 0 4px 20px rgba(59, 31, 94, 0.10);
-  overflow: hidden;
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-/* Top accent bar (matches .about-card::before) */
-.resources-poster-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(to right, var(--iris-mid), var(--iris-light));
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-.resources-poster-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(107, 63, 160, 0.15);
-}
-
-.resources-poster-card img {
-  width: 100%;
-  display: block;
-}
-
-/* Caption styling that matches your serif body text */
-.resources-poster-caption {
-  padding: 20px 24px;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 17px;
-  line-height: 1.7;
-  color: var(--text-mid);
-  background: var(--cream);
-  border-top: 1px solid rgba(155, 111, 212, 0.10);
-}
-
-  
-  .gallery-page-grid .gallery-item {
-    height: 200px;
-  }
-}
